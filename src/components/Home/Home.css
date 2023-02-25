@@ -1,0 +1,20 @@
+.background-card {
+    background-color: #f6f6f6;
+    margin-left: 100px;
+    margin-right: 100px;
+    width: auto;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-width: 768px;
+    width: auto;
+}
+
+.box {
+    /* width: calc(33.33% - 20px); */
+    width: 30%;
+    margin-top: 60px;
+}
