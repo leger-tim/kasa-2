@@ -1,6 +1,6 @@
 import React from "react";
 import Banner from "../Banner/Banner";
-import bannerAccueil from "../../assets/bannerAccueil.png";
+import HomeBanner from "../../assets/HomeBanner.png";
 import Card from "../Card/Card";
 import Housing from "../../datas/housing.json";
 import "./Home.css";
@@ -8,14 +8,14 @@ import "./Home.css";
 function Home() {
     return (
         <div>
-            <Banner image={bannerAccueil} texte="Chez vous, partout et ailleurs" />
+            <Banner image={HomeBanner} texte="Chez vous, partout et ailleurs" />
             <div className="background-card">
                 <div className="container">
                     {Housing &&
                         Housing.map((housing) => {
                             return (
                                 <div className="box" key={housing.id}>
-                                    <Card image={housing.cover} title={housing.title} />
+                                    <Card id={housing.id} image={housing.cover} title={housing.title} />
                                 </div>
                             );
                         })}
