@@ -1,8 +1,8 @@
 import React from "react";
 import { useParams, Navigate } from "react-router-dom";
-// import NotFound from "../404/404";
 import housing from "../../datas/housing.json";
 import "./Housing.css";
+import SmallCollapse from "../SmallCollapse/SmallCollapse";
 
 function Housing() {
     const { id } = useParams();
@@ -13,9 +13,14 @@ function Housing() {
     }
 
     return (
-        <div className="container-housing">
-            <h1>{housing.title}</h1>
-            <p>{housing.description}</p>
+        <div>
+            <div className="container-housing">
+                <h1>{housingSearch.title}</h1>
+                <p>{housingSearch.description}</p>
+            </div>
+            <SmallCollapse title="Description" description={housingSearch.description} />
+            <SmallCollapse title="Équipements" description={housingSearch.equipments} />
+
         </div>
     );
 }
