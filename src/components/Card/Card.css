@@ -4,7 +4,7 @@
     position: relative;
     background-color: #FF6060;
     border-radius: 10px;
-
+    max-width: 100%;
 }
 
 .titre>p {
