@@ -7,7 +7,11 @@ import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
 import Housing from './components/Housing/Housing';
 
-
+// Utiliser createBrowserRouter
+// Utiliser errorElement
+// Utiliser Outlet pour header et footer sur chaque page
+// .jsx au lieu de .js
+// Un seul collapse, le conteneur gère les détails style 
 function App() {
   return (
     <div className="App">
