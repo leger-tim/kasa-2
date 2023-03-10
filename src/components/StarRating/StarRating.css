@@ -1,0 +1,13 @@
+.star {
+    width: 30px;
+    height: 30px;
+}
+
+@media only screen and (max-width: 900px) {
+
+    .star {
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+    }
+}

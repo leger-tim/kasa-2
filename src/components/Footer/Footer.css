@@ -18,3 +18,10 @@ footer>p {
 footer>img {
     padding-top: 26px;
 }
+
+@media only screen and (max-width: 780px) {
+
+    footer {
+        margin-top: 20px;
+    }
+}

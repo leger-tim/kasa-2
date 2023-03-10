@@ -4,6 +4,7 @@
     justify-content: center;
     align-items: center;
     color: #FF6060;
+    margin-top: 277px;
 
     height: 100vh;
 }
@@ -17,10 +18,25 @@
     font-size: 36px;
     margin-top: 0;
     margin-bottom: 190px;
+    margin-top: 20px;
 }
 
 .retour {
-    text-decoration-line: none;
+    text-decoration: underline;
     color: #FF6060;
     font-size: 18px;
+    margin-bottom: 300px;
+}
+
+@media only screen and (max-width: 780px) {
+    .code {
+        font-size: 96px;
+    }
+
+    .message {
+        font-size: 18px;
+        width: 70%;
+        text-align: center;
+        margin-bottom: 150px;
+    }
 }

@@ -1,4 +1,4 @@
-.collapse {
+.small-collapse {
     width: 580px;
     margin: auto;
     margin-bottom: 30px;
@@ -6,7 +6,7 @@
     text-align: left;
 }
 
-.header-collapse {
+.small-header-collapse {
     width: 100%;
     height: 25%;
     min-height: 50px;
@@ -16,14 +16,14 @@
     display: inline-flex;
 }
 
-.title-collapse {
+.small-title-collapse {
     height: 50px;
     color: white;
     line-height: 50px;
     margin: 5px 10px;
 }
 
-.description-collapse {
+.small-description-collapse {
     height: 75%;
     min-height: 100px;
     background-color: #f6f6f6;
@@ -47,4 +47,10 @@
 
 .arrow-collapse.open img {
     transform: rotate(180deg);
+}
+
+@media only screen and (max-width: 1400px) {
+    .small-collapse {
+        width: 400px;
+    }
 }
