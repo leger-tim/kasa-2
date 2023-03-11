@@ -11,7 +11,6 @@ function Housing() {
   const { id } = useParams();
   const housingSearch = housing.find((housing) => housing.id === id);
 
-  // changera avec errorElement, rechercher lancer une exception react, throw new Exception
   if (!housingSearch) {
     return <Navigate to={`/*`} />;
   }

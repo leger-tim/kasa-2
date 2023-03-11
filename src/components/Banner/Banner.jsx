@@ -1,15 +1,14 @@
 import React from "react";
-import "./Banner.css"
-
+import "./Banner.css";
 
 function Banner({ image, texte }) {
-    return (
-        <div className="banner">
-            <img className="banner-img" src={image} alt="Bannière" />
-            <div className="banner-sombre"></div>
-            <span className="banner-txt">{texte}</span>
-        </div>
-    );
+  return (
+    <div className="banner">
+      <img className="banner-img" src={image} alt="Bannière" />
+      <div className="banner-sombre"></div>
+      <span className="banner-txt">{texte}</span>
+    </div>
+  );
 }
 
-export default Banner
+export default Banner;

@@ -8,7 +8,7 @@ import "./Home.css";
 function Home() {
   const texte = [
     "Chez vous,",
-    <br className="break" />,
+    <br key="break" className="break" />,
     " partout et ailleurs",
   ];
 
