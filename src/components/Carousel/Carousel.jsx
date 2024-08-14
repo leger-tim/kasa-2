@@ -20,6 +20,8 @@ function Carousel(props) {
 
   const currentIndex = currentImage + 1;
 
+  const hasMultipleImages = props.images.length > 1;
+
   return (
     <div className="carousel">
       <img
@@ -27,23 +29,27 @@ function Carousel(props) {
         src={props.images[currentImage]}
         alt="Carousel"
       />
-      <img
-        className="left-arrow"
-        src={leftArrow}
-        alt="flèche gauche carousel"
-        onClick={prevImage}
-      />
-      <img
-        className="right-arrow"
-        src={rightArrow}
-        alt="flèche droite carousel"
-        onClick={nextImage}
-      />
-      <div className="carousel-nav bottom">
-        <span>
-          {currentIndex}/{props.images.length}
-        </span>
-      </div>
+      {hasMultipleImages && (
+        <>
+          <img
+            className="left-arrow"
+            src={leftArrow}
+            alt="flèche gauche carousel"
+            onClick={prevImage}
+          />
+          <img
+            className="right-arrow"
+            src={rightArrow}
+            alt="flèche droite carousel"
+            onClick={nextImage}
+          />
+          <div className="carousel-nav bottom">
+            <span>
+              {currentIndex}/{props.images.length}
+            </span>
+          </div>
+        </>
+      )}
     </div>
   );
 }
